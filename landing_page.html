@@ -1,61 +1,87 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITF ERP System</title>
-    <link rel="stylesheet" href="Styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITF ERP System</title>
+  <link rel="stylesheet" href="Styles/style.css">
 </head>
 <body>
-    <header>
-        <div class="clearfix"></div>
-        <div id="image-logo">
-            <img src="Images/itflogo.jpg" alt="ITF ERP Logo" title="ITF ERP System" id="imgp" style="width: 100% !important; height: 100% !important;">
+  <header>
+    <div class="container page-header">
+      <a class="site-brand" href="landing_page.html">
+        <img src="images/itflogo.jpg" alt="ITF ERP Logo">
+        <span>ITF ERP System</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a class="active" href="landing_page.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="login_page.html">Login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <p style="margin:0 0 1rem; color:#2563eb; font-weight:700; letter-spacing:.05em; text-transform:uppercase; font-size:.9rem;">Modern ERP, built for teams</p>
+        <h1 class="hero-title">Manage operations faster with a smarter ERP platform.</h1>
+        <p>From inventory and finance to employee workflows, ITF ERP brings all your business systems together in one polished workspace.</p>
+        <div class="hero-actions">
+          <a href="login_page.html" class="btn">Get Started</a>
+          <a href="#features" class="btn" style="background: #e2e8f0; color: var(--text); box-shadow:none;">Explore Features</a>
         </div>
-        <h1>Welcome to ITF ERP System</h1>
-        <nav>
-            <ul>
-                <li><a href="landing_page.html">Home</a></li>
-                <li><a href="about_page.html">About</a></li>
-                <li><a href="contact_page.html">Contact</a></li>
-                <li><a href="login_page.html">Login</a></li>
-            </ul>
-        </nav>
-    </header>
+      </div>
+      <div class="hero-illustration">
+        <img src="images/itflogo.jpg" alt="ITF ERP Dashboard illustrating performance analytics">
+      </div>
+    </section>
 
-    <main>
-        <section class="hero">
-            <h2>Your Ultimate ERP Solution</h2>
-            <p>Streamline your business operations with our comprehensive ERP system.</p>
-            <a href="signup_page.html" class="btn">Get Started</a>
-        </section>
+    <section id="about" class="section-card">
+      <h2>About ITF ERP</h2>
+      <p>Our system helps organizations standardize processes, reduce manual work, and deliver clarity across departments. The easy-to-use interface is designed for both administrators and end users.</p>
+    </section>
 
-        <section class="features">
-            <h2>Features</h2>
-            <div class="feature-item">
-                <h3>Inventory Management</h3>
-                <p>Keep track of your inventory in real-time and manage stock levels efficiently.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Financial Reporting</h3>
-                <p>Generate detailed financial reports to make informed business decisions.</p>
-            </div>
-            <div class="feature-item">
-                <h3>Customer Relationship Management</h3>
-                <p>Manage your customer interactions and improve customer satisfaction.</p>
-            </div>
-        </section>
+    <section id="features" class="section-card">
+      <h2>Features</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Inventory Management</h3>
+          <p>Track stock levels, orders, and warehouse operations from a single dashboard.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Financial Reporting</h3>
+          <p>Generate accurate reports and monitor cash flow with automated accounting widgets.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Customer Relationship Management</h3>
+          <p>Manage leads, customer accounts, and service requests with simple workflows.</p>
+        </div>
+      </div>
+    </section>
 
-        <section class="testimonials">
-            <h2>What Our Clients Say</h2>
-            <blockquote>"ITF ERP has transformed our business operations. Highly recommended!" - Jane Doe, CEO of XYZ Corp.</blockquote>
-            <blockquote>"The best ERP solution we've ever used. Excellent support and features." - John Smith, CTO of ABC Inc.</blockquote>
-        </section>
+    <section class="section-card testimonials">
+      <h2>What Our Clients Say</h2>
+      <blockquote>"ITF ERP has transformed our business operations. Highly recommended!" – Jane Doe, CEO of XYZ Corp.</blockquote>
+      <blockquote>"The best ERP solution we've ever used. Excellent support and features." – John Smith, CTO of ABC Inc.</blockquote>
+    </section>
 
-        <section class="contact">
-            <h2>Contact Us</h2>
-            <p>If you have any questions or would like to learn more about our ERP system, please contact us at:</p>
-            <ul>
-                <li>Email:
+    <section id="contact" class="section-card">
+      <h2>Contact Us</h2>
+      <p>If you have questions or want to learn more, reach out to our team.</p>
+      <ul class="contact-list">
+        <li><strong>Email:</strong> <span>support@itferp.com</span></li>
+        <li><strong>Phone:</strong> <span>+1 (800) 123-4567</span></li>
+        <li><strong>Address:</strong> <span>123 Enterprise Drive, Nairobi, Kenya</span></li>
+      </ul>
+    </section>
+  </main>
 
+  <footer class="container">
+    <p>&copy; 2026 ITF ERP System. Designed to simplify your business operations.</p>
+  </footer>
+</body>
 </html>

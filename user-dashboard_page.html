@@ -1,63 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - ITF ERP</title>
+  <link rel="stylesheet" href="Styles/style.css">
 </head>
 <body>
-    <header>
-        <h1>Dashboard</h1>
-        <nav>
-            <ul>
-                <li><a href="dashboard_page.html">Home</a></li>
-                <li><a href="profile_page.html">Profile</a></li>
-                <li><a href="settings_page.html">Settings</a></li>
-                <li><a href="logout.html">Logout</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <div class="container page-header">
+      <a class="site-brand" href="landing_page.html">
+        <img src="images/itflogo.jpg" alt="ITF ERP Logo">
+        <span>ITF ERP Dashboard</span>
+      </a>
+      <nav>
+        <ul>
+          <li><a class="active" href="user-dashboard_page.html">Home</a></li>
+          <li><a href="profile_page.html">Profile</a></li>
+          <li><a href="settings_page.html">Settings</a></li>
+          <li><a href="logout.html">Logout</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <section class="stats">
-            <h2>Statistics</h2>
-            <div class="stat-item">
-                <h3>Total Users</h3>
-                <p>1,234</p>
-            </div>
-            <div class="stat-item">
-                <h3>Active Sessions</h3>
-                <p>567</p>
-            </div>
-            <div class="stat-item">
-                <h3>Revenue</h3>
-                <p>$12,345</p>
-            </div>
-        </section>
+  <main class="container dashboard-page">
+    <section class="section-card">
+      <h1 class="page-title">Welcome back, Admin</h1>
+      <p style="margin:0; color: var(--muted);">Your ERP overview is up to date. Track performance, review activity, and respond to notifications from one central place.</p>
+    </section>
 
-        <section class="recent-activity">
-            <h2>Recent Activity</h2>
-            <ul>
-                <li>User John Doe logged in.</li>
-                <li>User Jane Smith updated her profile.</li>
-                <li>User Mike Johnson made a purchase.</li>
-            </ul>
-        </section>
+    <section class="dashboard-grid">
+      <div class="stat-card">
+        <h3>Total Users</h3>
+        <p class="stats-summary">1,234</p>
+      </div>
+      <div class="stat-card">
+        <h3>Active Sessions</h3>
+        <p class="stats-summary">567</p>
+      </div>
+      <div class="stat-card">
+        <h3>Revenue</h3>
+        <p class="stats-summary">$12,345</p>
+      </div>
+    </section>
 
-        <section class="notifications">
-            <h2>Notifications</h2>
-            <ul>
-                <li>You have 5 new messages.</li>
-                <li>Your subscription will expire in 3 days.</li>
-                <li>New comment on your post.</li>
-            </ul>
-        </section>
-    </main>
+    <section class="section-card">
+      <h2>Recent Activity</h2>
+      <ul class="activity-list">
+        <li>User John Doe logged in.</li>
+        <li>User Jane Smith updated her profile.</li>
+        <li>User Mike Johnson made a purchase.</li>
+      </ul>
+    </section>
 
-    <footer>
-        &copy; 2024 Dashboard Inc. All rights reserved.
-    </footer>
+    <section class="section-card">
+      <h2>Notifications</h2>
+      <ul class="notification-list">
+        <li>You have 5 new messages.</li>
+        <li>Your subscription will expire in 3 days.</li>
+        <li>New comment on your post.</li>
+      </ul>
+    </section>
+  </main>
 
-    <!-- Include JavaScript files -->
-    <script src="scripts.js"></script>
+  <footer>
+    &copy; 2026 ITF ERP System. All rights reserved.
+  </footer>
+</body>
+</html>

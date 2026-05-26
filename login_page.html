@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - ITF ERP System</title>
+  <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+  <div class="login-page">
+    <div class="login-container">
+      <div style="display:flex; justify-content:space-between; align-items:center; gap:1rem; margin-bottom:1.5rem;">
+        <div class="site-brand">
+          <img src="images/itflogo.jpg" alt="ITF ERP Logo">
+          <span>ITF ERP</span>
+        </div>
+        <a href="landing_page.html" style="color: var(--primary); font-weight:600;">Back to Home</a>
+      </div>
+      <h2>Welcome Back</h2>
+      <p style="margin:0 0 1.75rem; color: var(--muted);">Sign in to access your ERP dashboard and manage your operations.</p>
+      <form>
+        <div class="form-group">
+          <label for="username">Username</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
